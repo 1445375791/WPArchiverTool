@@ -11,6 +11,8 @@
 		7653DED61FF491E100B7FDC3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DED51FF491E100B7FDC3 /* Person.m */; };
 		7653DEE21FF4C3E200B7FDC3 /* NSObject+WPArchiverObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DEDC1FF4C16F00B7FDC3 /* NSObject+WPArchiverObject.m */; };
 		7653DEE41FF4C3E200B7FDC3 /* NSObject+WPObjectDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DEDE1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.m */; };
+		7653DEE81FF4D8D100B7FDC3 /* WPObjectAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DEE71FF4D8D100B7FDC3 /* WPObjectAttributes.m */; };
+		7653DEEB1FF4E87400B7FDC3 /* WPObjectDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DEEA1FF4E87400B7FDC3 /* WPObjectDetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,10 @@
 		7653DEDD1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WPObjectDetail.h"; sourceTree = "<group>"; };
 		7653DEDE1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WPObjectDetail.m"; sourceTree = "<group>"; };
 		7653DEE51FF4C40000B7FDC3 /* WPArchiverTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPArchiverTool.h; sourceTree = "<group>"; };
+		7653DEE61FF4D8D100B7FDC3 /* WPObjectAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPObjectAttributes.h; sourceTree = "<group>"; };
+		7653DEE71FF4D8D100B7FDC3 /* WPObjectAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPObjectAttributes.m; sourceTree = "<group>"; };
+		7653DEE91FF4E87400B7FDC3 /* WPObjectDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPObjectDetailModel.h; sourceTree = "<group>"; };
+		7653DEEA1FF4E87400B7FDC3 /* WPObjectDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPObjectDetailModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 				7653DEDC1FF4C16F00B7FDC3 /* NSObject+WPArchiverObject.m */,
 				7653DEDD1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.h */,
 				7653DEDE1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.m */,
+				7653DEE61FF4D8D100B7FDC3 /* WPObjectAttributes.h */,
+				7653DEE71FF4D8D100B7FDC3 /* WPObjectAttributes.m */,
+				7653DEE91FF4E87400B7FDC3 /* WPObjectDetailModel.h */,
+				7653DEEA1FF4E87400B7FDC3 /* WPObjectDetailModel.m */,
 				7653DEE51FF4C40000B7FDC3 /* WPArchiverTool.h */,
 			);
 			path = WPArchiverTool;
@@ -145,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7653DEE21FF4C3E200B7FDC3 /* NSObject+WPArchiverObject.m in Sources */,
+				7653DEE81FF4D8D100B7FDC3 /* WPObjectAttributes.m in Sources */,
+				7653DEEB1FF4E87400B7FDC3 /* WPObjectDetailModel.m in Sources */,
 				7653DEE41FF4C3E200B7FDC3 /* NSObject+WPObjectDetail.m in Sources */,
 				7653DED61FF491E100B7FDC3 /* Person.m in Sources */,
 				7653DEC51FF48D1400B7FDC3 /* main.m in Sources */,

@@ -17,7 +17,7 @@
  @param aCoder acoder
  */
 - (void)wpEncodeObjectWithCoder:(NSCoder *)aCoder {
-    NSMutableArray *propties = [self objectDetailInfoWithPropties];
+    NSMutableArray *propties = [self wpObjectAllPropertiesAndVariablesName];
     for (NSString *propt in propties) {
         [aCoder encodeObject:[self valueForKeyPath:propt] forKey:propt];
     }
@@ -29,7 +29,7 @@
  @param aDecoder acoder
  */
 - (void)wpDecoderObjectWithCoder:(NSCoder *)aDecoder {
-    NSMutableArray *propties = [self objectDetailInfoWithPropties];
+    NSMutableArray *propties = [self wpObjectAllPropertiesAndVariablesName];
     for (NSString *propt in propties) {
         [self setValue:[aDecoder decodeObjectForKey:propt] forKeyPath:propt];
     }

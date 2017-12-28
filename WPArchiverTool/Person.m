@@ -9,6 +9,9 @@
 #import "Person.h"
 #import "WPArchiverTool.h"
 @interface Person ()
+{
+    NSString *_classInfo;
+}
 @property (nonatomic, strong) NSArray *friends;
 @end
 @implementation Person

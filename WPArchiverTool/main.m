@@ -22,12 +22,16 @@ int main(int argc, const char * argv[]) {
         per.job = @"工程师";
         per.phone = @"23232323232";
         [per setValue:@[@"211", @"2323232"] forKeyPath:@"friends"];
-        NSLog(@"%@", [per objectDetailInfoWithPropties]);
-        [per wpObjectDescript];
-        [per wpArchiverObjectWithFileName:@"persion"];
+//        NSLog(@"variableName %@", [per wpObjectAllPropertiesAndVariablesName]);
+        // 使用反射机制获取
+//        NSLog(@"PropertiesName %@", [per wpObjectAllProptiesName]);
+//        [per wpObjectDescript];
+//        [per wpArchiverObjectWithFileName:@"persion"];
         
-        Person *per1 = [Person wpUnArchiverObjectWithFileName:@"persion"];
-        [per1 wpObjectDescript];
+//        Person *per1 = [Person wpUnArchiverObjectWithFileName:@"persion"];
+//        [per1 wpObjectDescript];
+        
+        NSLog(@"%@", [per wpObjectAllPropertiesNameAndTypes]);
     }
     return 0;
 }
