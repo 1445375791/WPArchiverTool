@@ -100,10 +100,10 @@
             [detailDic addEntriesFromDictionary:dic];
         }
         free(attributs);
-        NSLog(@"%@ \n", properString);
+//        NSLog(@"%@ \n", properString);
         
-        [typeDic setObject:[WPObjectDetailModel initObjectAttributeModel:detailDic] forKey:properString];
-//        [typeDic setObject:detailDic forKey:properString];
+//        [typeDic setObject:[WPObjectDetailModel initObjectAttributeModel:detailDic] forKey:properString];
+        [typeDic setObject:detailDic forKey:properString];
         [detailInfos addObject:typeDic];
     }
     free(propts);

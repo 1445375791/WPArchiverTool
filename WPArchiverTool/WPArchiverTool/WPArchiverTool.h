@@ -11,6 +11,7 @@
 
 #import "NSObject+WPArchiverObject.h"
 #import "NSObject+WPObjectDetail.h"
+#import "WPObjectDetailModel.h"
 
 #endif /* WPArchiverTool_h */
 

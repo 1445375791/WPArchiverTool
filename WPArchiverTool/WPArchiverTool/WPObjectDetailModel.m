@@ -48,7 +48,7 @@
     if ([type hasPrefix:@"@"]) {
         typeInfo = [[type substringFromIndex:1] stringByReplacingOccurrencesOfString:@"\"" withString:@""];
     } else {
-        typeInfo = @"unknow";
+        typeInfo = type;
     }
     NSString *showType;
     if ([typeInfo isEqualToString:@"NSArray"]) {
@@ -57,12 +57,89 @@
     } else if ([typeInfo isEqualToString:@"NSString"]) {
         propertyType = WPObjectPropertyTypeNSString;
         showType = @"WPObjectPropertyTypeNSString";
+    } else if ([typeInfo isEqualToString:@"NSMutableString"]) {
+        propertyType = WPObjectPropertyTypeNSMutableString;
+        showType = @"WPObjectPropertyTypeNSMutableString";
     } else if ([typeInfo isEqualToString:@"NSNumber"]) {
         propertyType = WPObjectPropertyTypeNSNumber;
         showType = @"WPObjectPropertyTypeNSNumber";
+    } else if ([typeInfo isEqualToString:@"NSMutableArray"]) {
+        propertyType = WPObjectPropertyTypeNSMutableArray;
+        showType = @"WPObjectPropertyTypeNSMutableArray";
+    } else if ([typeInfo isEqualToString:@"NSDictionary"]) {
+        propertyType = WPObjectPropertyTypeNSDictory;
+        showType = @"WPObjectPropertyTypeNSDictory";
+    } else if ([typeInfo isEqualToString:@"NSMutableDictionary"]) {
+        propertyType = WPObjectPropertyTypeNSMutableDictionary;
+        showType = @"WPObjectPropertyTypeNSMutableDictionary";
+    } else if ([typeInfo isEqualToString:@"NSSet"]) {
+        propertyType = WPObjectPropertyTypeNSSet;
+        showType = @"WPObjectPropertyTypeNSSet";
+    } else if ([typeInfo isEqualToString:@"NSMutableSet"]) {
+        propertyType = WPObjectPropertyTypeNSMutableSet;
+        showType = @"WPObjectPropertyTypeNSMutableSet";
+    } else if ([typeInfo isEqualToString:@"NSData"]) {
+        propertyType = WPObjectPropertyTypeNSData;
+        showType = @"WPObjectPropertyTypeNSData";
+    } else if ([typeInfo isEqualToString:@"NSDate"]) {
+        propertyType = WPObjectPropertyTypeNSDate;
+        showType = @"WPObjectPropertyTypeNSDate";
+    } else if ([typeInfo isEqualToString:@"NSURL"]) {
+        propertyType = WPObjectPropertyTypeNSURL;
+        showType = @"WPObjectPropertyTypeNSURL";
+    } else if ([typeInfo isEqualToString:@"?"]) {
+        propertyType = WPObjectPropertyTypeBlock;
+        showType = @"WPObjectPropertyTypeBlock";
+    } else if ([typeInfo hasPrefix:@"<"] && [typeInfo hasSuffix:@">"]) {
+        propertyType = WPObjectPropertyTypeDelegate;
+        showType = @"WPObjectPropertyTypeDelegate";
+    } else if ([typeInfo isEqualToString:@"f"]) {
+        propertyType = WPObjectPropertyTypeFloat;
+        showType = @"WPObjectPropertyTypeFloat";
+    } else if ([typeInfo isEqualToString:@"i"]) {
+        propertyType = WPObjectPropertyTypeInt;
+        showType = @"WPObjectPropertyTypeInt";
+    } else if ([typeInfo isEqualToString:@"d"]) {
+        propertyType = WPObjectPropertyTypeDouble;
+        showType = @"WPObjectPropertyTypeDouble";
+    } else if ([typeInfo isEqualToString:@"Q"]) {
+        propertyType = WPObjectPropertyTypeNSUInteger;
+        showType = @"WPObjectPropertyTypeNSUInteger";
+    } else if ([typeInfo isEqualToString:@"q"]) {
+        propertyType = WPObjectPropertyTypeNSInteger;
+        showType = @"WPObjectPropertyTypeNSInteger";
+    } else if ([typeInfo isEqualToString:@"s"]) {
+        propertyType = WPObjectPropertyTypeShort;
+        showType = @"WPObjectPropertyTypeShort";
+    } else if ([typeInfo isEqualToString:@"c"]) {
+        propertyType = WPObjectPropertyTypeCharOrBool;
+        showType = @"WPObjectPropertyTypeCharOrBool";
     } else {
-        propertyType = WPObjectPropertyTypeUnknow;
-        showType = @"WPObjectPropertyTypeUnknow";
+        if ([typeInfo hasPrefix:@"NS"]) {
+            propertyType = WPObjectPropertyTypeOtherNSType;
+            showType = @"WPObjectPropertyTypeOtherNSType";
+        } else {
+            
+            if ([typeInfo hasPrefix:@"{CG"]) {
+                NSString *cgType = [[[typeInfo componentsSeparatedByString:@"="] firstObject] substringFromIndex:1];
+                if ([cgType isEqualToString:@"CGRect"]) {
+                    propertyType = WPObjectPropertyTypeCGRect;
+                    showType = @"WPObjectPropertyTypeCGRect";
+                } else if ([cgType isEqualToString:@"CGSize"]) {
+                    propertyType = WPObjectPropertyTypeCGSize;
+                    showType = @"WPObjectPropertyTypeCGSize";
+                } else if ([cgType isEqualToString:@"CGPoint"]) {
+                    propertyType = WPObjectPropertyTypeCGPoint;
+                    showType = @"WPObjectPropertyTypeCGPoint";
+                } else {
+                    propertyType = WPObjectPropertyTypeOtherCGType;
+                    showType = @"WPObjectPropertyTypeOtherCGType";
+                }
+            } else {
+                propertyType = WPObjectPropertyTypeUnknow;
+                showType = @"WPObjectPropertyTypeUnknow";
+            }
+        }
     }
     
     return @{showType : [NSNumber numberWithInteger:propertyType]};

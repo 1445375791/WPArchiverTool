@@ -8,19 +8,39 @@
 
 #import <Foundation/Foundation.h>
 
-    // 类型
+// 类型
 typedef NS_ENUM(NSUInteger, WPObjectPropertyType) {
     WPObjectPropertyTypeUnknow,
-    WPObjectPropertyTypeNSString,
-    WPObjectPropertyTypeNSDictory,
+    WPObjectPropertyTypeShort,
+    WPObjectPropertyTypeCharOrBool,
     WPObjectPropertyTypeInt,
     WPObjectPropertyTypeFloat,
     WPObjectPropertyTypeDouble,
+    WPObjectPropertyTypeNSInteger,
+    WPObjectPropertyTypeNSUInteger,
+    WPObjectPropertyTypeNSString,
+    WPObjectPropertyTypeNSMutableString,
     WPObjectPropertyTypeNSNumber,
     WPObjectPropertyTypeNSArray,
+    WPObjectPropertyTypeNSMutableArray,
+    WPObjectPropertyTypeNSDictory,
+    WPObjectPropertyTypeNSMutableDictionary,
+    WPObjectPropertyTypeNSSet,
+    WPObjectPropertyTypeNSMutableSet,
+    WPObjectPropertyTypeNSData,
+    WPObjectPropertyTypeNSMutableData,
+    WPObjectPropertyTypeNSURL,
+    WPObjectPropertyTypeNSDate,
+    WPObjectPropertyTypeBlock,
+    WPObjectPropertyTypeDelegate,
+    WPObjectPropertyTypeOtherNSType,
+    WPObjectPropertyTypeCGRect,
+    WPObjectPropertyTypeCGSize,
+    WPObjectPropertyTypeCGPoint,
+    WPObjectPropertyTypeOtherCGType,
 };
 
-    // 编码类型
+// 编码类型
 typedef NS_ENUM(NSUInteger, WPObjectEncodingType) {
     WPObjectEncodingTypeUnknow,
     WPObjectEncodingTypeCopy,
@@ -30,7 +50,7 @@ typedef NS_ENUM(NSUInteger, WPObjectEncodingType) {
     WPObjectEncodingTypeRetain,
 };
 
-    //原子性
+//原子性
 typedef NS_ENUM(NSUInteger, WPObjectAtomicType) {
     WPObjectAtomicTypeNonatomic,
     WPObjectAtomicTypeAtomic,

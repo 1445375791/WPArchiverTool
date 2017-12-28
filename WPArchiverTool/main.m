@@ -15,13 +15,13 @@ int main(int argc, const char * argv[]) {
         // insert code here...
 //        NSLog(@"Hello, World!");
         Person *per = [[Person alloc] init];
-        per.name = @"哈哈";
-        per.age = 10;
-        per.height = 172.0;
-        per.address = @"北京";
-        per.job = @"工程师";
-        per.phone = @"23232323232";
-        [per setValue:@[@"211", @"2323232"] forKeyPath:@"friends"];
+//        per.name = @"哈哈";
+//        per.age = 10;
+//        per.height = 172.0;
+//        per.address = @"北京";
+//        per.job = @"工程师";
+//        per.phone = @"23232323232";
+//        [per setValue:@[@"211", @"2323232"] forKeyPath:@"friends"];
 //        NSLog(@"variableName %@", [per wpObjectAllPropertiesAndVariablesName]);
         // 使用反射机制获取
 //        NSLog(@"PropertiesName %@", [per wpObjectAllProptiesName]);
@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
         
 //        Person *per1 = [Person wpUnArchiverObjectWithFileName:@"persion"];
 //        [per1 wpObjectDescript];
-        
+//        [per wpObjectAllPropertiesNameAndTypes];
         NSLog(@"%@", [per wpObjectAllPropertiesNameAndTypes]);
     }
     return 0;

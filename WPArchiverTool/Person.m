@@ -12,7 +12,7 @@
 {
     NSString *_classInfo;
 }
-@property (nonatomic, strong) NSArray *friends;
+@property (nonatomic, copy) NSArray *friends;
 @end
 @implementation Person
 
