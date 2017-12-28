@@ -115,7 +115,6 @@
 
 - (NSString *)description {    
     return [NSString stringWithFormat:@"propertyTypeName: %@   encodingTypeName: %@  atomicTypeName:  %@  proptyName: %@", _propertyTypeName, _encodingTypeName, _atomicTypeName, _proptyName];
-    
 }
 
 @end
