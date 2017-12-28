@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7653DEC51FF48D1400B7FDC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DEC41FF48D1400B7FDC3 /* main.m */; };
+		7653DED61FF491E100B7FDC3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DED51FF491E100B7FDC3 /* Person.m */; };
+		7653DEE21FF4C3E200B7FDC3 /* NSObject+WPArchiverObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DEDC1FF4C16F00B7FDC3 /* NSObject+WPArchiverObject.m */; };
+		7653DEE41FF4C3E200B7FDC3 /* NSObject+WPObjectDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653DEDE1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7653DEBF1FF48D1400B7FDC3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7653DEC11FF48D1400B7FDC3 /* WPArchiverTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WPArchiverTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		7653DEC41FF48D1400B7FDC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7653DED41FF491E100B7FDC3 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7653DED51FF491E100B7FDC3 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		7653DEDB1FF4C16F00B7FDC3 /* NSObject+WPArchiverObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WPArchiverObject.h"; sourceTree = "<group>"; };
+		7653DEDC1FF4C16F00B7FDC3 /* NSObject+WPArchiverObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WPArchiverObject.m"; sourceTree = "<group>"; };
+		7653DEDD1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WPObjectDetail.h"; sourceTree = "<group>"; };
+		7653DEDE1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WPObjectDetail.m"; sourceTree = "<group>"; };
+		7653DEE51FF4C40000B7FDC3 /* WPArchiverTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPArchiverTool.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7653DEBE1FF48D1400B7FDC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7653DEB81FF48D1400B7FDC3 = {
+			isa = PBXGroup;
+			children = (
+				7653DEC31FF48D1400B7FDC3 /* WPArchiverTool */,
+				7653DEC21FF48D1400B7FDC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7653DEC21FF48D1400B7FDC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7653DEC11FF48D1400B7FDC3 /* WPArchiverTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7653DEC31FF48D1400B7FDC3 /* WPArchiverTool */ = {
+			isa = PBXGroup;
+			children = (
+				7653DEDA1FF4C16F00B7FDC3 /* WPArchiverTool */,
+				7653DEC41FF48D1400B7FDC3 /* main.m */,
+				7653DED41FF491E100B7FDC3 /* Person.h */,
+				7653DED51FF491E100B7FDC3 /* Person.m */,
+			);
+			path = WPArchiverTool;
+			sourceTree = "<group>";
+		};
+		7653DEDA1FF4C16F00B7FDC3 /* WPArchiverTool */ = {
+			isa = PBXGroup;
+			children = (
+				7653DEDB1FF4C16F00B7FDC3 /* NSObject+WPArchiverObject.h */,
+				7653DEDC1FF4C16F00B7FDC3 /* NSObject+WPArchiverObject.m */,
+				7653DEDD1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.h */,
+				7653DEDE1FF4C16F00B7FDC3 /* NSObject+WPObjectDetail.m */,
+				7653DEE51FF4C40000B7FDC3 /* WPArchiverTool.h */,
+			);
+			path = WPArchiverTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7653DEC01FF48D1400B7FDC3 /* WPArchiverTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7653DEC81FF48D1400B7FDC3 /* Build configuration list for PBXNativeTarget "WPArchiverTool" */;
+			buildPhases = (
+				7653DEBD1FF48D1400B7FDC3 /* Sources */,
+				7653DEBE1FF48D1400B7FDC3 /* Frameworks */,
+				7653DEBF1FF48D1400B7FDC3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPArchiverTool;
+			productName = TestRUN;
+			productReference = 7653DEC11FF48D1400B7FDC3 /* WPArchiverTool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7653DEB91FF48D1400B7FDC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "吴朋";
+				TargetAttributes = {
+					7653DEC01FF48D1400B7FDC3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7653DEBC1FF48D1400B7FDC3 /* Build configuration list for PBXProject "WPArchiverTool" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7653DEB81FF48D1400B7FDC3;
+			productRefGroup = 7653DEC21FF48D1400B7FDC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7653DEC01FF48D1400B7FDC3 /* WPArchiverTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7653DEBD1FF48D1400B7FDC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7653DEE21FF4C3E200B7FDC3 /* NSObject+WPArchiverObject.m in Sources */,
+				7653DEE41FF4C3E200B7FDC3 /* NSObject+WPObjectDetail.m in Sources */,
+				7653DED61FF491E100B7FDC3 /* Person.m in Sources */,
+				7653DEC51FF48D1400B7FDC3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7653DEC61FF48D1400B7FDC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7653DEC71FF48D1400B7FDC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7653DEC91FF48D1400B7FDC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7653DECA1FF48D1400B7FDC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7653DEBC1FF48D1400B7FDC3 /* Build configuration list for PBXProject "WPArchiverTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7653DEC61FF48D1400B7FDC3 /* Debug */,
+				7653DEC71FF48D1400B7FDC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7653DEC81FF48D1400B7FDC3 /* Build configuration list for PBXNativeTarget "WPArchiverTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7653DEC91FF48D1400B7FDC3 /* Debug */,
+				7653DECA1FF48D1400B7FDC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7653DEB91FF48D1400B7FDC3 /* Project object */;
+}
